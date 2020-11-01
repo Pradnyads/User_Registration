@@ -17,3 +17,12 @@ then
 else
     echo "no"
 fi
+
+read -p "enter a emailid " emailid
+EmailPattern="^[a-zA-Z._-]+@(gmail|bl|yahoo)+.(com|co|in)";
+if [[ $emailid =~ $EmailPattern ]]
+then
+    echo "yes"
+else
+    echo "no"
+fi
