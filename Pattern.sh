@@ -53,3 +53,12 @@ then
 else
     echo "no"
 fi
+
+read -p "enter a pasword " R
+NumPassword='^[A-Z]{1}[+a-zA-Z0-9]{8,}$'
+if [[ $R =~ $NumPassword ]]
+then
+    echo "yes"
+else
+    echo "no"
+fi
