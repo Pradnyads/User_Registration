@@ -26,3 +26,12 @@ then
 else
     echo "no"
 fi
+
+read -p "enter a mobile no " no
+MobilePattern='^((\+)?91)[ ]?[7896]{1}[0-9]{9}$'
+if [[ $no =~ $MobilePattern ]]
+then
+    echo "yes"
+else
+    echo "no"
+fi
