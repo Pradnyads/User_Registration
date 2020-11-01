@@ -44,3 +44,12 @@ then
 else
     echo "no"
 fi
+
+read -p "enter a pasword " Q
+UpcasePassword='^[A-Z]{1}[a-zA-Z]{8,}$';
+if [[ $Q =~ $UpcasePassword ]]
+then
+    echo "yes"
+else
+    echo "no"
+fi
