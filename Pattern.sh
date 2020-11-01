@@ -8,3 +8,12 @@ then
 else
     echo "no"
 fi
+
+read -p "enter a surname " surname
+LastName='^[A-Z]{1}[a-zA-Z]{3,15}$';
+if [[ $surname =~ $LastName ]]
+then
+    echo "yes"
+else
+    echo "no"
+fi
