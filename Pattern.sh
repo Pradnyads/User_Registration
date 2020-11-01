@@ -71,3 +71,12 @@ then
 else
     echo "no"
 fi
+
+read -p "enter a email " Id
+ValidEmail="^[a-zA-Z0-9._-+]+@(gmail|abc|yahoo)+.(com|co|in)"; 
+if [[ $Id =~ $ValidEmail ]]
+then
+    echo "yes"
+else
+    echo "no"
+fi
