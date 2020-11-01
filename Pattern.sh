@@ -35,3 +35,12 @@ then
 else
     echo "no"
 fi
+
+read -p "enter a pasword " Password
+PasswordPattern='^[a-zA-Z]{1,8}$'
+if [[ $Password =~ $PasswordPattern ]]
+then
+    echo "yes"
+else
+    echo "no"
+fi
