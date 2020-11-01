@@ -62,3 +62,12 @@ then
 else
     echo "no"
 fi
+
+read -p "enter a pasword " S
+SpecialPassword='^[A-Z]{1}[a-zA-Z0-9]*[+.@$#&!*%][+0-9]{8,}$'
+if [[ $S =~ $SpecialPassword ]]
+then
+    echo "yes"
+else
+    echo "no"
+fi
